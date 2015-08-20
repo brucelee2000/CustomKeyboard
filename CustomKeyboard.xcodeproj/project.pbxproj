@@ -13,6 +13,8 @@
 		A7FD962E1B854D6600496491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7FD962D1B854D6600496491 /* Images.xcassets */; };
 		A7FD96311B854D6600496491 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7FD962F1B854D6600496491 /* LaunchScreen.xib */; };
 		A7FD963D1B854D6600496491 /* CustomKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FD963C1B854D6600496491 /* CustomKeyboardTests.swift */; };
+		A7FD964F1B854E5300496491 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FD964E1B854E5300496491 /* KeyboardViewController.swift */; };
+		A7FD96521B854E5300496491 /* CatBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7FD964A1B854E5300496491 /* CatBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,28 @@
 			remoteGlobalIDString = A7FD96201B854D6600496491;
 			remoteInfo = CustomKeyboard;
 		};
+		A7FD96501B854E5300496491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7FD96191B854D6600496491 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7FD96491B854E5300496491;
+			remoteInfo = CatBoard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7FD96561B854E5300496491 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7FD96521B854E5300496491 /* CatBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A7FD96211B854D6600496491 /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +59,9 @@
 		A7FD96361B854D6600496491 /* CustomKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FD963B1B854D6600496491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7FD963C1B854D6600496491 /* CustomKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardTests.swift; sourceTree = "<group>"; };
+		A7FD964A1B854E5300496491 /* CatBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CatBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7FD964D1B854E5300496491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FD964E1B854E5300496491 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7FD96471B854E5300496491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,7 @@
 			children = (
 				A7FD96231B854D6600496491 /* CustomKeyboard */,
 				A7FD96391B854D6600496491 /* CustomKeyboardTests */,
+				A7FD964B1B854E5300496491 /* CatBoard */,
 				A7FD96221B854D6600496491 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +104,7 @@
 			children = (
 				A7FD96211B854D6600496491 /* CustomKeyboard.app */,
 				A7FD96361B854D6600496491 /* CustomKeyboardTests.xctest */,
+				A7FD964A1B854E5300496491 /* CatBoard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A7FD964B1B854E5300496491 /* CatBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A7FD964E1B854E5300496491 /* KeyboardViewController.swift */,
+				A7FD964C1B854E5300496491 /* Supporting Files */,
+			);
+			path = CatBoard;
+			sourceTree = "<group>";
+		};
+		A7FD964C1B854E5300496491 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FD964D1B854E5300496491 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +174,12 @@
 				A7FD961D1B854D6600496491 /* Sources */,
 				A7FD961E1B854D6600496491 /* Frameworks */,
 				A7FD961F1B854D6600496491 /* Resources */,
+				A7FD96561B854E5300496491 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A7FD96511B854E5300496491 /* PBXTargetDependency */,
 			);
 			name = CustomKeyboard;
 			productName = CustomKeyboard;
@@ -150,6 +204,23 @@
 			productReference = A7FD96361B854D6600496491 /* CustomKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A7FD96491B854E5300496491 /* CatBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7FD96531B854E5300496491 /* Build configuration list for PBXNativeTarget "CatBoard" */;
+			buildPhases = (
+				A7FD96461B854E5300496491 /* Sources */,
+				A7FD96471B854E5300496491 /* Frameworks */,
+				A7FD96481B854E5300496491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatBoard;
+			productName = CatBoard;
+			productReference = A7FD964A1B854E5300496491 /* CatBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +236,9 @@
 					A7FD96351B854D6600496491 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = A7FD96201B854D6600496491;
+					};
+					A7FD96491B854E5300496491 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -183,6 +257,7 @@
 			targets = (
 				A7FD96201B854D6600496491 /* CustomKeyboard */,
 				A7FD96351B854D6600496491 /* CustomKeyboardTests */,
+				A7FD96491B854E5300496491 /* CatBoard */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +274,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A7FD96341B854D6600496491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7FD96481B854E5300496491 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +307,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7FD96461B854E5300496491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7FD964F1B854E5300496491 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +322,11 @@
 			isa = PBXTargetDependency;
 			target = A7FD96201B854D6600496491 /* CustomKeyboard */;
 			targetProxy = A7FD96371B854D6600496491 /* PBXContainerItemProxy */;
+		};
+		A7FD96511B854E5300496491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7FD96491B854E5300496491 /* CatBoard */;
+			targetProxy = A7FD96501B854E5300496491 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,6 +485,30 @@
 			};
 			name = Release;
 		};
+		A7FD96541B854E5300496491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CatBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7FD96551B854E5300496491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CatBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +534,14 @@
 			buildConfigurations = (
 				A7FD96441B854D6600496491 /* Debug */,
 				A7FD96451B854D6600496491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A7FD96531B854E5300496491 /* Build configuration list for PBXNativeTarget "CatBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7FD96541B854E5300496491 /* Debug */,
+				A7FD96551B854E5300496491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
