@@ -20,7 +20,18 @@ class KeyboardViewController: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Add a customized button
+        let button = UIButton.buttonWithType(.System) as! UIButton
+        button.frame = CGRectMake(150, 40, 100, 120)
+        
+        var cat = UIImage(named: "cat2.jpg")
+        button.setBackgroundImage(cat, forState: .Normal)
+        
+        button.addTarget(self, action: "buttonPressed", forControlEvents: .TouchUpInside)
     
+        self.view.addSubview(button)
+        
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton.buttonWithType(.System) as! UIButton
     
@@ -57,6 +68,15 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.blackColor()
         }
         self.nextKeyboardButton.setTitleColor(textColor, forState: .Normal)
+    }
+    
+    func buttonPressed() {
+        // A proxy to the text input object that the custom keyboard is interacting with. (read-only)
+        var proxy = textDocumentProxy as! UITextDocumentProxy
+
+        // Insert a character into the displayed text.
+        proxy.insertText("meow~~~")
+        
     }
 
 }

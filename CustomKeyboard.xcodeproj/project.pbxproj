@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A721C0181B8583E800F66DD2 /* cat2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A721C0171B8583E800F66DD2 /* cat2.jpg */; };
 		A7FD96271B854D6600496491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FD96261B854D6600496491 /* AppDelegate.swift */; };
 		A7FD96291B854D6600496491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FD96281B854D6600496491 /* ViewController.swift */; };
 		A7FD962C1B854D6600496491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FD962A1B854D6600496491 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A721C0171B8583E800F66DD2 /* cat2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat2.jpg; sourceTree = "<group>"; };
 		A7FD96211B854D6600496491 /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FD96251B854D6600496491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7FD96261B854D6600496491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A7FD964E1B854E5300496491 /* KeyboardViewController.swift */,
+				A721C0171B8583E800F66DD2 /* cat2.jpg */,
 				A7FD964C1B854E5300496491 /* Supporting Files */,
 			);
 			path = CatBoard;
@@ -284,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A721C0181B8583E800F66DD2 /* cat2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +532,7 @@
 				A7FD96421B854D6600496491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7FD96431B854D6600496491 /* Build configuration list for PBXNativeTarget "CustomKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				A7FD96451B854D6600496491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7FD96531B854E5300496491 /* Build configuration list for PBXNativeTarget "CatBoard" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				A7FD96551B854E5300496491 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
